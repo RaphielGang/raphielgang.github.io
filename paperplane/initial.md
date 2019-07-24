@@ -10,10 +10,12 @@ Install Docker from your appropriate package manager
 
 Optional: Create an empty group, add Marie, or any forks, get the group id, copy it and set it as your `LOGGER` (in case you want logging).
 
-Since its fully dockerized, the setup is just building the docker image
+Since its fully dockerized, the setup is just building the docker image, tho you need your session file
 
 ```sh
 cd Telegram-UserBot
+pip3 install telethon
+python3 generate_session_file.py
 docker build . -t userbot
 ```
 
