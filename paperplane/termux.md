@@ -1,74 +1,47 @@
-•Lets setup the Bot•
+Setup Paperplane using TermUX, Step-by-Step
+===========================================
 
-Open Termux and paste the fllowing commands one by one
+### Before you start
 
-     1) apt-get update; apt-get upgrade
+Get your api-id (called API_KEY in this bot) and API_HASH from my.telegram.org.
 
-     2) apt-get install zlib zlib-dev curl wget libwebp libwebp-dev libjpeg*     
+In case you want Logging support(optional): Create an empty group, add Marie, or any forks, get the group id, copy and keep it(will be used in the next steps).
 
- (yes "*" is there)    
+### TermUX setup, generating a session
 
-     3) pkg install clang curl python python-dev postgresql-dev libcrypt-dev libffi-dev openssl-dev libxml2-dev libxslt-dev libjpeg-turbo-dev ndk-sysroot make   
+Open Termux and paste the following commands one by one, pressing Enter after each line:
 
-     4) pkg install curl git clang python
+    apt-get update -y; apt-get upgrade -y
+    apt-get install zlib zlib-dev curl wget libwebp libwebp-dev libjpeg* -y
 
-    5) pkg install clang python sqlite python-dev libcrypt-dev libffi-dev openssl-dev libxml2-dev libxslt-dev
+(yes, "*" is there.)
 
-    6) pip install --upgrade pip
+Then paste those:
 
-    7) pkg install postgresql
+    pkg install git clang python libcrypt libffi openssl libxml2 libxslt ndk-sysroot make sqlite -y
+    pip install --upgrade pip
+    pip3 install --upgrade telethon async_generator
+    pkg upgate -y
+    git clone https://github.com/RaphielGang/Telegram-UserBot.git userbot
+    cd userbot
+    pip3 install -r requirements.txt
 
-     8) pip3 install --upgrade telethon
+Wait while it downloada some packages. Don't close TermUX.
 
-    9) pkg install clang python sqlite python-dev libcrypt-dev libffi-dev openssl-dev libxml2-dev libxslt-dev
+After it finishes, get your API_KEY and API_HASH. Then, type these 2 lines, replaceing your-api-hash and your-api-key with your API_HASH and API_KEY respectively(no quotes are needed).
 
-    10) pkg install libjpeg-turbo-dev
-
-    11) pkg install postgresql-dev python-dev make clang
-
-    12) pip install psycopg2-binary
-
-     13) pip install async_generator
-
-     14) pkg upgate
-
-    15) git clone --bare https://github.com/RaphielGang/Telegram-UserBot.git
-
-    16) cd Telegram-UserBot.git 
-
-         Now copy your repo link
-
-          It should be like this         
-
-   https://github.com/"your_username"/"your_repo_name".git
-
- 
-
-     17) git push --mirror "your repo link" 
-
-    18) cd
-
-    19) git clone "your repo link" 
-
-     20) cd "your repo name"
-
-    21) pip3 install -r requirements.txt
-
-      Now wait it will download some packages. Don't close termux
-
-    22) export API_HASH=your-api-hash
-
+    export API_HASH=your-api-hash
     export API_KEY=your-api-id
 
-and now do 
+And now type:
 
     python3 -m userbot
 
-Now it will ask for your mobile number give it with your country code like this +911234567891
+Now it will ask for your mobile number, write it with your country code like this:+911234567891.
+Then, type the Login code you received.
+Enjoy!
 
-Then type OTP and done.
-
-Now you have successfully created your own userbot test it by typing .alive in any chat
+Now you have successfully set up Paperplane. Test it by typing .alive in any chat.
  •How to Deploy to Heroku•
 
  After successfull login it will generete a session.
