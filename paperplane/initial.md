@@ -2,7 +2,9 @@
 
 ### Before you start
 
-Clone this repo `git clone https://github.com/RaphielGang/Telegram-UserBot`
+Clone this repo
+
+    git clone https://github.com/RaphielGang/Telegram-UserBot
 
 Get your api-id (called `API_KEY` in this bot) and `API_HASH` from my.telegram.org.
 
