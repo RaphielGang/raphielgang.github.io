@@ -4,7 +4,7 @@
 
 Clone this repo `git clone https://github.com/RaphielGang/Telegram-UserBot`
 
-Get your api-id (called `API_KEY` in this bot) and API_HASH from my.telegram.org.
+Get your api-id (called `API_KEY` in this bot) and `API_HASH` from my.telegram.org.
 
 Install Docker from your appropriate package manager
 
@@ -40,19 +40,7 @@ This file should be placed in the topmost part of the repo.
 This is where your `API KEYS` will be loaded from, as well as your `database URI` (if you're using a database), and most of
 your other settings.
 
-An example `config.env` file could be:
-```env
-    API_KEY=123456
-    BUILD_CHOICE="bleeding"
-    API_HASH='4588acb1863ead924119c885dfffba2'
-    BOTLOG_CHATID=-1001200493567
-    BOTLOG=True    #Incase you want to turn off logging, put this to false
-    PM_AUTO_BAN=True
-    CONSOLE_LOGGER_VERBOSE=True
-    SCREEN_SHOT_LAYER_ACCESS_KEY="get from screenshot layer website google it "
-    OPEN_WEATHER_MAP_APPID="get it from openweather site"
-    MONGO_DB_URI=
-```
+An example `config.env` is available on Paperplane repo
 
 !> If you can't have a config.env file, or you missed to type something on `config.env` but then pushed it up, it is also possible to use environment variables.
 
