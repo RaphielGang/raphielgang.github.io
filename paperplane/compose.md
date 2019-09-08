@@ -2,7 +2,7 @@
 
 # Cloning Repo
 
-    https://github.com/RaphielGang/Paperplane-Dockerstation.git
+    git clone https://github.com/RaphielGang/Paperplane-Dockerstation.git
 
 !> Don't change the cloned folder name `Paperplane-Dockerstation` unless you know what are you doing
 
