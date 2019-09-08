@@ -8,7 +8,29 @@
 
 Get your api-id (called `API_KEY` in this bot) and `API_HASH` from my.telegram.org.
 
-Install Docker from your appropriate package manager
+### Installing Docker (Compose)
+
+Fedora :
+
+```sh
+dnf install docker docker-compose
+```
+
+Fedora (Silverblue) :
+
+```sh
+rpm-ostree install docker docker-compose
+```
+
+Debian :
+
+```sh
+apt install docker
+```
+
+!> For distros that doesn't ship docker-compose in the Package Repository (e.g : Debian), refer to https://docs.docker.com/compose/install/
+
+!> Refer to your distro if yours isn't specifid here
 
 ### Bot Activities Logging (Optional)
 
@@ -26,6 +48,8 @@ This file should be placed in the topmost part of the repo.
 An example `config.env` is available on Dockerstation repo.
 
 !> If you can't have a config.env file, or you missed to type something on `config.env` but then pushed it up, it is also possible to use environment variables.
+
+!> If the config is there but python-dotenv can't read it. The encoding is wrong
 
 ### Getting Session
 
