@@ -1,24 +1,40 @@
-# Caramell docs
+<h1 align="center">
+  <br>
+  <img src="yeet.png" alt="yeet">
+  <br>
+  The Raphielscape Documentations
+  <br>
+  <br>
+</h1>
 
-This repository contains all the documentation for RaphielGang
+Here you'll find documentations and resources for this entire memes
 
-## Testing changes
+What's RaphielGang?
+==========
 
-### Requirements
-- [Node.js](http://nodejs.org) 4.0 or higher
-- [NPM](https://www.npmjs.com) 5.2.0 or higher
+Basically, it's a placeholders for brickports project or a bunch of caramell stuff
 
-Check your version of NPM with `npm -v` and Node.js with `node -v`.
+What's available today?
+==========
 
-### Develop
+Caramells, nah jk xd It's currently holding several (active) projects
 
-To test out your changes, run:
+  - Kat (Disrupt) Kernol
+  - Kud Kernol
+  - Weeb Kernol
+  - Paperplane (Telegram Userbot)
 
+Testing Changes
+==========
+
+Install docsify globally
+
+```sh
+npm i docsify-cli -g
 ```
-npm i
-npm run serve
+
+Run the local server with docsify serve. You can preview the Wiki in your browser on http://localhost:3000.
+
+```sh
+docsify serve docs
 ```
-
-Navigate your browser to localhost:3000.
-
-
