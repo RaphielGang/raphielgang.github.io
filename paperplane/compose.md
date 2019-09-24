@@ -115,6 +115,15 @@ Once you've setup your database and your configuration (see below) is complete, 
 docker-compose up -d
 ```
 
+# Updating the bot
+
+In-case you want to update your deployed image, simply run
+
+```sh
+docker-compose build --pull --no-cache
+docker-compose up -d
+```
+
 ### Debugging the bot
 
 If you can't start the bot, run
