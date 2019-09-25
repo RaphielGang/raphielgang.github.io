@@ -22,6 +22,7 @@ Caramells, nah jk xd It's currently holding several (active) projects
   - Kat (Disrupt) Kernol
   - Kud Kernol
   - Weeb Kernol
+  - Acrux Kernol
   - Paperplane (Telegram Userbot)
 
 Testing Changes
