@@ -71,7 +71,7 @@ body {
   overflow-x: hidden;
 }
 img {
-  max-width: 100%;
+  max-width: -webkit-fill-available;
 }
 a[disabled] {
   cursor: not-allowed;
@@ -213,7 +213,6 @@ main.hidden {
   text-decoration: underline;
 }
 .sidebar {
-  border-right: 1px solid rgba(0,0,0,0.07);
   overflow-y: auto;
   padding: 40px 0 0;
   position: absolute;
@@ -368,36 +367,35 @@ body.sticky .sidebar-toggle {
   background-color: #f8f8f8;
 }
 .markdown-section p.tip {
-  background-color: #f8f8f8;
-  border-bottom-right-radius: 2px;
-  border-left: 4px solid #f66;
-  border-top-right-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  color: #5f6368;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow-y: visible;
+  flex-direction: row-reverse;
+  margin: 24px auto 0;
+  width: 731px;
+  background-color: #ffffff;
   margin: 2em 0;
   padding: 12px 24px 12px 30px;
   position: relative;
   font-weight: bold;
 }
 .markdown-section p.tip:before {
-  background-color: #f66;
-  border-radius: 100%;
-  color: #fff;
-  content: '!';
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
-  font-weight: bold;
-  left: -12px;
-  line-height: 20px;
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  text-align: center;
-  top: 14px;
-}
-.markdown-section p.tip code {
-  background-color: #efefef;
-}
-.markdown-section p.tip em {
-  color: #000;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(172, 172, 172, 0.87);
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  display: block;
+  align-self: center;
+  border-radius: 0;
+  Content: "NOTICE";
 }
 .markdown-section p.warn {
   background: rgba(0,0,0,0.1);
@@ -722,9 +720,8 @@ section.cover blockquote > p > a:hover {
   color: #7f8c8d;
 }
 .markdown-section pre {
-  -moz-osx-font-smoothing: initial;
-  -webkit-font-smoothing: initial;
-  background-color: #282828;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(255, 255, 255);
   font-family: "Founders Grotesk Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   line-height: 1.5rem;
   margin: 1.2em 0;
@@ -732,15 +729,21 @@ section.cover blockquote > p > a:hover {
   padding: 0 1.4rem;
   position: relative;
   word-wrap: normal;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  overflow-y: visible;
+  width: 731px;
 }
 .markdown-section code {
-  background-color: #282828;
-  border-radius: 2px;
-  color: #ffffff;
+  color: #000000;
   font-family: "Founders Grotesk Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.8rem;
-  margin: 0 2px;
-  padding: 3px 5px;
+  margin: 0px;
+  padding: initial;
   white-space: pre-wrap;
 }
 /* code highlight */
@@ -822,20 +825,21 @@ section.cover blockquote > p > a:hover {
   cursor: help;
 }
 .markdown-section pre > code {
-  -moz-osx-font-smoothing: initial;
-  -webkit-font-smoothing: initial;
-  background-color: #282828;
-  border-radius: 2px;
-  color: #657b83;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   display: block;
   font-family: "Roboto Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.8rem;
+  font-size: .875rem;
   line-height: inherit;
-  margin: 0 2px;
+  letter-spacing: .01428571em;
   max-width: inherit;
   overflow: inherit;
   padding: 2.2em 5px;
   white-space: inherit;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #3c4043;
 }
 .markdown-section code::after,
 .markdown-section code::before {
@@ -858,10 +862,6 @@ pre::after {
   right: 0;
   text-align: right;
   top: 0;
-}
-.markdown-section p.tip {
-  background-color: #282828;
-  color: #657b83;
 }
 input[type='search'] {
   background: #4f4f4f;
