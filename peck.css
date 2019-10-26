@@ -631,14 +631,6 @@ section.cover blockquote > p > a {
 section.cover blockquote > p > a:hover {
   color: var(--theme-color, #000);
 }
-body {
-  background-color: #3f3f3f;
-}
-/* sidebar */
-.sidebar {
-  background-color: #3f3f3f;
-  color: #c8c8c8;
-}
 .sidebar li {
   margin: 6px 15px 6px 0;
 }
@@ -751,6 +743,7 @@ body {
   position: relative;
   word-wrap: normal;
 }
+
 /* code highlight */
 .token.comment,
 .token.prolog,
