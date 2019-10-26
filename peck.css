@@ -721,16 +721,6 @@ section.cover blockquote > p > a:hover {
 .markdown-section em {
   color: #7f8c8d;
 }
-.markdown-section code {
-  background-color: #282828;
-  border-radius: 2px;
-  color: #657b83;
-  font-family: "Founders Grotesk Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.8rem;
-  margin: 0 2px;
-  padding: 3px 5px;
-  white-space: pre-wrap;
-}
 .markdown-section pre {
   -moz-osx-font-smoothing: initial;
   -webkit-font-smoothing: initial;
@@ -743,7 +733,16 @@ section.cover blockquote > p > a:hover {
   position: relative;
   word-wrap: normal;
 }
-
+.markdown-section code {
+  background-color: #282828;
+  border-radius: 2px;
+  color: #ffffff;
+  font-family: "Founders Grotesk Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.8rem;
+  margin: 0 2px;
+  padding: 3px 5px;
+  white-space: pre-wrap;
+}
 /* code highlight */
 .token.comment,
 .token.prolog,
