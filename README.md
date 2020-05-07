@@ -31,8 +31,16 @@ Install docsify globally
 npm i docsify-cli -g
 ```
 
-Run the local server with docsify serve. You can preview the Wiki in your browser on http://localhost:3000.
+Clone the repository
 
 ```sh
-docsify serve docs
+git clone https://github.com/RaphielGang/raphielgang.github.io
 ```
+
+Run the local server with docsify serve. 
+
+```sh
+cd raphielgang.github.io
+docsify serve .
+```
+You can preview the Wiki in your browser on http://localhost:3000.
