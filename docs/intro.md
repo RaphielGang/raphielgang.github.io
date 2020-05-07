@@ -23,3 +23,4 @@ Caramells, nah jk xd It's currently holding several (active) projects
   - Kud Kernol
   - Weeb Kernol
   - Retarded Kramel
+  - Paperplane (Telegram Userbot)
