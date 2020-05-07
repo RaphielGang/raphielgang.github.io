@@ -4,19 +4,26 @@
 
 Clone this repo
 
-    git clone https://github.com/RaphielGang/Telegram-UserBot
+```sh
+git clone https://github.com/RaphielGang/Telegram-Paperplane
+```
+
+!> Don't change the cloned folder name `Telegram-Paperplane` unless you know what are you doing
 
 Get your api-id (called `API_KEY` in Paperplane) and `API_HASH` from my.telegram.org.
+Add them to your config.env file, following `sample_config.env` as an example.
 
-Install Docker from your appropriate package manager.
+### Installing Docker
 
-Optional: Create an empty group, add Marie or another group management bot of your choice, get the group id, copy it and set it as your `LOGGER` (in case you want logging).
+Refer to https://docs.docker.com/get-docker/ for instructions on how to install Docker on your distro.
 
-Since it's fully dockerized, the setup is just building the docker image, though you need to generate a session file.
+### Generating a session file
+
+To run Paperplane, you should generate a session file. You can do so by following the commands below.
 
 ```sh
-cd Telegram-UserBot
-pip3 install telethon
+cd Telegram-Paperplane
+pip3 install python-dotenv telethon
 python3 generate_session_file.py
 docker build . -t userbot
 ```
@@ -45,6 +52,37 @@ An example config file(`sample_config.env`) is available on the Paperplane repo.
 
 !> If you can't have a config.env file, or you missed to type something on `config.env` but then pushed it up, it is also possible to use environment variables.
 
+### Bot Activities Logging (Optional)
+
+Create an empty group, add Marie, or any forks, get the group id, copy it and set it as your `BOTLOG_CHATID`.
+
+!> This variable is ignored if `BOTLOG` is set to `False`
+
+### Getting Google Drive Session (Optional)
+
+1. Go to APIs Console and make your own project.
+2. Search for ‘Google Drive API’, select the entry, and click ‘Enable’.
+3. Select ‘Credentials’ from the left menu, click ‘Create Credentials’, select ‘OAuth client ID’.
+4. Now, the product name and consent screen need to be set -> click ‘Configure consent screen’ and follow the instructions. Once finished:
+
+    - Select ‘Application type’ to be Web application.
+    - Enter an appropriate name.
+    - Input http://localhost:8080 for ‘Authorized JavaScript origins’.
+    - Input http://localhost:8080/ for ‘Authorized redirect URIs’.
+    - Click ‘Save’.
+
+5. Click ‘Download JSON’ on the right side of Client ID to download client_secret_<really long ID>.json.
+
+The downloaded file has all authentication information of your application.
+
+!> Rename the file to “client_secrets.json” and place it in your working directory.
+
+And then run the following command and follow the login instruction
+
+```sh
+pip3 install PyDrive
+python3 generate_drive_session.py
+```
 
 ## Starting the bot
 
