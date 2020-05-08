@@ -4,7 +4,7 @@
 
     git clone https://github.com/RaphielGang/Paperplane-Dockerstation.git
 
-!> Don't change the cloned folder name `Paperplane-Dockerstation` unless you know what are you doing
+!> Don't change the cloned folder name `Paperplane-Dockerstation` unless you know what you are doing.
 
 Get your api-id (called `API_KEY` in this bot) and `API_HASH` from my.telegram.org.
 
@@ -28,14 +28,16 @@ Debian :
 apt install docker
 ```
 
-!> For distros that doesn't ship docker-compose in the Package Repository (e.g : Debian), refer to https://docs.docker.com/compose/install/
+!> For distros which don't ship docker-compose in the Package Repository (e.g : Debian), refer to https://docs.docker.com/compose/install/
 
 !> Refer to your distro if yours isn't specified here.
 
 ### Configuration
+
 Read about configuration settings [here](/paperplane/initial?id=configuration).
 
-### Getting Session
+### Generating a Session file
+
 Read about generating a session file [here](/paperplane/initial?id=generating-a-session-file).
 
 ### Database

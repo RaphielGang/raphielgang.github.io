@@ -2,13 +2,22 @@
 
 ### Before you start
 
-Clone this repo
+Make sure you have git and python3 installed on your machine. Those are installed by default on most of the Linux distributions. Follow the commands below to install Git and Python on TermUX.
+
+```sh
+    apt-get update -y; apt-get upgrade -y
+    apt-get install git python
+```
+
+### Cloning the repository
+
+Use the following command to clone the Paperplane repo to your machine.
 
 ```sh
 git clone https://github.com/RaphielGang/Telegram-Paperplane
 ```
 
-!> Don't change the cloned folder name `Telegram-Paperplane` unless you know what are you doing
+!> Don't change the cloned folder name (`Telegram-Paperplane`) unless you know what you are doing.
 
 Get your api-id (called `API_KEY` in Paperplane) and `API_HASH` from my.telegram.org.
 Add them to your config.env file, following `sample_config.env` as an example.
@@ -22,11 +31,15 @@ Refer to https://docs.docker.com/get-docker/ for instructions on how to install 
 To run Paperplane, you should generate a session file. You can do so by following the commands below.
 
 ```sh
+export API_HASH=your-api-hash
+export API_KEY=your-api-id
+
 cd Telegram-Paperplane
-pip3 install python-dotenv telethon
+pip3 install --upgrade python-dotenv telethon
 python3 generate_session_file.py
-docker build . -t userbot
 ```
+
+!> Replace `your-api-hash` and `your-api-id` with your API Hash and API ID respectively.
 
 ### Database
 
@@ -51,6 +64,7 @@ This is where your `API KEYS` will be loaded from, your `database URI` (if you'r
 An example config file(`sample_config.env`) is available on the Paperplane repo.
 
 !> If you can't have a config.env file, or you missed to type something on `config.env` but then pushed it up, it is also possible to use environment variables.
+
 
 ### Bot Activities Logging (Optional)
 
@@ -84,10 +98,26 @@ pip3 install PyDrive
 python3 generate_drive_session.py
 ```
 
-## Starting the bot
+## Running locally
 
-Once you've setup your database and your configuration (see above) is complete, simply run:
+From here, you can choose to either run Paperplane locally (or on a VPS), or deploy it to Heroku. Check out the [Deploying to Heroku](paperplane/heroku?id=deploying-to-heroku) page for Heroku, otherwise follow the steps below to build and run the Docker image on a PC or VPS.
+
+### Building the container
+
+Once you've set up your database and your configuration (see above) is complete, build the Docker image:
+
+```sh
+docker build . -t userbot
+```
+
+### Starting the bot
+
+After building the image, simply run:
 
 ```sh
 docker run userbot
 ```
+
+!> If you get no response from the `.alive` command, make sure you generated a session and set the API Key and Hash correctly.
+
+!> If you need more help, check the [FAQ](/paperplane/faq?id=frequently-asked-questions) or the [Portals](/paperplane/portals) for more support.

@@ -1,4 +1,6 @@
-# Databases connections are failing!
+# Frequently Asked Questions
+
+## Databases connections are failing!
 
 Try to check if:
 
@@ -7,7 +9,7 @@ Try to check if:
  3. You're entered invalid database url
  4. Make sure you followed all the steps mentioned under database setup
 
-# How to make a new module?
+## How to make a new module?
 Creating a module has been simplified as much as possible - but do not hesitate to suggest further simplification.
 
 All that is needed is that your .py file be in the modules folder.
@@ -25,7 +27,6 @@ You can then add commands wrapping them under
 async def some_function(e):
      Whatever here.
 ```
-
 
 You can also set outgoing to incoming incase, you wanna make that command to parse the incoming message.
 
