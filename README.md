@@ -22,7 +22,7 @@ Caramells, nah jk xd It's currently holding several (active) projects
   - Acrux Kernol
   - Paperplane (Telegram Userbot)
 
-Testing Changes
+Testing Docs locally
 ==========
 
 Install docsify globally

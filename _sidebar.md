@@ -1,6 +1,3 @@
-The Yeet Documentation
-=============
-
 * Paperplane
     * [Getting Started](paperplane/getting-started.md)
     * [Initial Bringups](paperplane/initial.md)
