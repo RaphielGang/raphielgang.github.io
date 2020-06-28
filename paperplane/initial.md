@@ -120,4 +120,4 @@ docker run userbot
 
 !> If you get no response from the `.alive` command, make sure you generated a session and set the API Key and Hash correctly.
 
-!> If you need more help, check the [FAQ](/paperplane/faq?id=frequently-asked-questions) or the [Portals](/paperplane/portals) for more support.
+?> If you need more help, check the [FAQ](/paperplane/faq?id=frequently-asked-questions) or the [Portals](/paperplane/portals) for more support.

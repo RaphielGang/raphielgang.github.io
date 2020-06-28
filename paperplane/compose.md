@@ -28,9 +28,9 @@ Debian :
 apt install docker
 ```
 
-!> For distros which don't ship docker-compose in the Package Repository (e.g : Debian), refer to https://docs.docker.com/compose/install/
+?> For distros which don't ship docker-compose in the Package Repository (e.g : Debian), refer to https://docs.docker.com/compose/install/
 
-!> Refer to your distro if yours isn't specified here.
+?> Refer to your distro if yours isn't specified here.
 
 ### Configuration
 

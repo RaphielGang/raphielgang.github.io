@@ -26,7 +26,7 @@ Standalone installer(required sudo):
 curl https://cli-assets.heroku.com/install.sh | sh
 ```
 
-!> Read more about installing Heroku CLI [here](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
+?> Read more about installing Heroku CLI [here](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
 
 
 ### Configuring the app
@@ -82,5 +82,5 @@ After turning the dyno on, wait a few seconds for Paperplane to start, then try 
 
 !> If you get no response from the `.alive` command, make sure you set the API Key and Hash correctly.
 
-!> If you need more help, check the [FAQ](/paperplane/faq?id=frequently-asked-questions) or the [Portals](/paperplane/portals) for more support.
+?> If you need more help, check the [FAQ](/paperplane/faq?id=frequently-asked-questions) or the [Portals](/paperplane/portals) for more support.
 
