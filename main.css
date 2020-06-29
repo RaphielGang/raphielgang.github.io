@@ -2,4 +2,7 @@
     --heading-h1-font-weight: bold;
     --sidebar-name-font-weight: bold;
     --theme-color: black;
+    --sidebar-background: white;
+    --sidebar-toggle-background: white;
+    --sidebar-border-width: 0;
 }
