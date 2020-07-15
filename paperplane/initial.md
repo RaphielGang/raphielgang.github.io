@@ -36,7 +36,7 @@ export API_KEY=your-api-id
 
 cd Telegram-Paperplane
 pip3 install --upgrade python-dotenv telethon
-python3 generate_session_file.py
+python3 scripts/generate_session_file.py
 ```
 
 !> Replace `your-api-hash` and `your-api-id` with your API Hash and API ID respectively.
@@ -95,7 +95,7 @@ And then run the following command and follow the login instruction
 
 ```sh
 pip3 install PyDrive
-python3 generate_drive_session.py
+python3 scripts/generate_drive_session.py
 ```
 
 ## Running locally
