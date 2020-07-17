@@ -1,4 +1,4 @@
-# Deploying to Heroku
+# Deploying to Heroku Manually
 
 After doing the initial configuration, you can deploy Paperplane to Heroku.
 

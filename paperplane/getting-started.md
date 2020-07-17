@@ -12,4 +12,10 @@ Originally created by baalajimaestro, Paperplane is currently maintained by zaka
 
 # Running Paperplane
 
-To setup Paperplane, follow the steps found in pages at the sidebar (you can open the sidebar with the hamburger menu at the top of the screen). Start from the Initial Bringups page, then follow the next pages according to your needs.
+Before starting, you should read the [Before Starting](/paperplane/before-starting.md) page to make sure you have everything necessary for setting up Paperplane.
+
+After finishing that, you can choose to either install Paperplane using the automatic way(Deploy to Heroku), or manually(for running locally or on a VPS, or if you like doing things the good way).
+
+To get started with the Automatic Way, head to the [The Automatic Way](/paperplane/the-automatic-way.md) page. Remember, this method will only work if you want to deploy to Heroku, and you will still need to generate your string session manually with the Python script (meaning that you need a machine with Python installed).
+
+If you don't want to deploy to Heroku, or you just want to do things the manual way, you can use [The Manual Way](/paperplane/the-manual-way.md) guide and setup Paperplane easily. This way you can run it essentially anywhere which supports Docker.
